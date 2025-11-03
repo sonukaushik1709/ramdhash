@@ -3,7 +3,11 @@ module "rg" {
   rgs    = var.rgs
 
 }
+module "rg1" {
+  source = "../../module/azurerm_resource_group"
+  rgs    = var.rgs
 
+}
 module "stgs" {
   source     = "../../module/azurerm_storage_account"
   depends_on = [module.rg]
