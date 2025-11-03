@@ -3,7 +3,7 @@ module "rg" {
   rgs    = var.rgs
 
 }
-module "rg420" {
+module "rg1600" {
   source = "../../module/azurerm_resource_group"
   rgs    = var.rgs
 
